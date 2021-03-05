@@ -1,6 +1,6 @@
 {
   "name": "@wuss-ui/system",
-  "version": "0.0.2-alpha.0",
+  "version": "0.0.3-alpha.0",
   "description": "> TODO: description",
   "author": "Alfan Jauhari <hi.alfanj@gmail.com>",
   "homepage": "",
@@ -44,8 +44,8 @@
     "styled-components": "^5.2.1"
   },
   "peerDependencies": {
-    "tailwindcss": "^2.0.3",
-    "react": "^17.0.1"
+    "react": "^17.0.1",
+    "tailwindcss": "^2.0.3"
   },
   "gitHead": "c28c5c3a65491867f855b80cf677084ceb9e9ef5"
 }
