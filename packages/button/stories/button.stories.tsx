@@ -26,5 +26,6 @@ export const Example = Template.bind({});
 Example.args = {
   children: 'Hello World',
   variant: 'primary',
-  size: 'md'
+  size: 'md',
+  as: 'a'
 };

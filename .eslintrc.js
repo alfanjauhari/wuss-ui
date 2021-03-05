@@ -44,7 +44,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
     'no-unneeded-ternary': 'off',
-    'implicit-arrow-linebreak': ['error', 'below'],
+    'implicit-arrow-linebreak': 'error',
     'function-paren-newline': 'off',
     'react/button-has-type': 'off',
     'object-curly-newline': 'off'

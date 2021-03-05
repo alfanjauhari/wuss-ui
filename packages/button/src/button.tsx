@@ -1,10 +1,15 @@
 import React, { ButtonHTMLAttributes, forwardRef } from 'react';
-import { styled, classnames } from '@wuss-ui/system';
+import {
+  styled,
+  classnames,
+  BaseProps
+} from '@wuss-ui/system';
 
-export type ButtonProps = {
-  variant?: 'primary' | 'secondary';
-  size?: 'sm' | 'md' | 'lg' | 'xl';
-} & ButtonHTMLAttributes<HTMLButtonElement>;
+export type ButtonProps = BaseProps &
+  ButtonHTMLAttributes<HTMLButtonElement> & {
+    variant?: 'primary' | 'secondary';
+    size?: 'sm' | 'md' | 'lg' | 'xl';
+  };
 
 export const buttonStyles = {
   base: 'rounded focus:outline-none focus:ring-1 focus:ring-offset-2',
@@ -26,7 +31,7 @@ export const StyledButton = styled.button<ButtonProps>({});
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
-    { children, variant = 'primary', size = 'md', className, ...props },
+    { children, variant = 'primary', size = 'md', className, as, ...props },
     ref
   ) => {
     const classNames = classnames(
@@ -37,7 +42,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     );
 
     return (
-      <StyledButton className={classNames} ref={ref} {...props}>
+      <StyledButton as={as} className={classNames} ref={ref} {...props}>
         {children}
       </StyledButton>
     );
