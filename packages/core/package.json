@@ -1,0 +1,44 @@
+{
+  "name": "@wuss-ui/core",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "Alfan Jauhari <hi.alfanj@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "typings": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfanjauhari/wuss-ui.git"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "concurrently yarn:build:*",
+    "build:esm": "cross-env BABEL_ENV=esm babel src --root-mode upward --extensions .ts,.tsx -d dist/esm --source-maps",
+    "build:cjs": "cross-env BABEL_ENV=cjs babel src --root-mode upward --extensions .ts,.tsx -d dist/cjs --source-maps",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
+    "version": "npm run build"
+  },
+  "bugs": {
+    "url": "https://github.com/alfanjauhari/wuss-ui/issues"
+  },
+  "dependencies": {
+    "@wuss-ui/button": "^0.0.1",
+    "@wuss-ui/system": "^0.0.1"
+  }
+}
