@@ -39,5 +39,10 @@
   },
   "dependencies": {
     "@wuss-ui/system": "^0.0.2-alpha.0"
-  }
+  },
+  "peerDependencies": {
+    "tailwindcss": "^2.0.3",
+    "react": "^17.0.1"
+  },
+  "gitHead": "c28c5c3a65491867f855b80cf677084ceb9e9ef5"
 }
