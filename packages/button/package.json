@@ -1,6 +1,6 @@
 {
   "name": "@wuss-ui/button",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "description": "Wuss UI button component",
   "author": "Alfan Jauhari <hi.alfanj@gmail.com>",
   "homepage": "",
@@ -38,6 +38,6 @@
     "url": "https://github.com/alfanjauhari/wuss-ui/issues"
   },
   "dependencies": {
-    "@wuss-ui/system": "^0.0.1"
+    "@wuss-ui/system": "^0.0.2-alpha.0"
   }
 }

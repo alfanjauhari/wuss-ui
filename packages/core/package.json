@@ -1,6 +1,6 @@
 {
   "name": "@wuss-ui/core",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "description": "> TODO: description",
   "author": "Alfan Jauhari <hi.alfanj@gmail.com>",
   "homepage": "",
@@ -38,7 +38,7 @@
     "url": "https://github.com/alfanjauhari/wuss-ui/issues"
   },
   "dependencies": {
-    "@wuss-ui/button": "^0.0.1",
-    "@wuss-ui/system": "^0.0.1"
+    "@wuss-ui/button": "^0.0.2-alpha.0",
+    "@wuss-ui/system": "^0.0.2-alpha.0"
   }
 }
